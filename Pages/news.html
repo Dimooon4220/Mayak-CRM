@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Новини | Mayak CRM</title>
+
+<link rel="stylesheet" href="../css/news.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>📰 Новини клубу</h1>
+
+<button id="addNews">
+<i class="fa-solid fa-plus"></i>
+Додати новину
+</button>
+
+</header>
+
+<div id="newsContainer">
+
+</div>
+
+</div>
+
+<!-- Модальне вікно -->
+
+<div class="modal" id="newsModal">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h2>Нова новина</h2>
+
+<span id="closeModal">&times;</span>
+
+</div>
+
+<div class="form">
+
+<input type="text"
+id="title"
+placeholder="Заголовок">
+
+<textarea
+id="text"
+placeholder="Текст новини"></textarea>
+
+<input type="date"
+id="date">
+
+<input
+type="file"
+id="photo">
+
+<button id="saveNews">
+
+💾 Опублікувати
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="../js/news.js"></script>
+
+</body>
+
+</html>

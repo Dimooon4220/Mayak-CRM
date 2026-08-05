@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренери | Mayak CRM</title>
+
+    <link rel="stylesheet" href="../css/coaches.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>👨‍🏫 Тренери клубу</h1>
+
+        <div class="actions">
+
+            <input type="text"
+                   id="searchCoach"
+                   placeholder="🔍 Пошук тренера">
+
+
+
+        </div>
+
+    </header>
+
+    <div class="coachGrid" id="coachGrid">
+
+    </div>
+
+</div>
+
+<script src="../js/coaches.js"></script>
+
+</body>
+
+<!-- Модальне вікно -->
+
+<div class="modal" id="coachModal">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h2>➕ Додати тренера</h2>
+
+            <span id="closeModal">&times;</span>
+
+        </div>
+
+        <div class="form">
+
+            <input type="text" id="firstName" placeholder="Ім'я">
+
+            <input type="text" id="lastName" placeholder="Прізвище">
+
+            <input type="text" id="role" placeholder="Посада">
+
+            <input type="text" id="teams" placeholder="Команди">
+
+            <input type="text" id="phone" placeholder="Телефон">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <input type="file" id="photo">
+
+            <button id="saveCoach">
+
+                💾 Зберегти
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+</html>

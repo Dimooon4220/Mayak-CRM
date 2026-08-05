@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Тренування | Mayak CRM</title>
+
+    <link rel="stylesheet" href="../css/traning.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>📅 Тренування</h1>
+
+<div class="actions">
+
+<input
+type="text"
+id="searchTraining"
+placeholder="🔍 Пошук тренування">
+
+<button id="addTraining">
+
+➕ Додати тренування
+
+</button>
+
+</div>
+
+</header>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Дата</th>
+<th>Команда</th>
+<th>Тренер</th>
+<th>Тема</th>
+<th>Документ</th>
+<th>Дії</th>
+
+</tr>
+
+</thead>
+
+<tbody id="trainingTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- Модальне вікно -->
+
+<div class="modal" id="trainingModal">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h2>➕ Додати тренування</h2>
+
+<span id="closeModal">&times;</span>
+
+</div>
+
+<div class="form">
+
+<input type="date" id="date">
+
+<input type="text" id="team" placeholder="Команда">
+
+<input type="text" id="coach" placeholder="Тренер">
+
+<input type="text" id="topic" placeholder="Тема тренування">
+
+<input type="file" id="document" accept=".doc,.docx,.pdf">
+
+<button id="saveTraining">
+
+💾 Зберегти
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="../js/traning.js"></script>
+
+</body>
+</html>

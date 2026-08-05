@@ -1,0 +1,584 @@
+/* ===== Загальні налаштування ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===== Ліве меню ===== */
+
+.sidebar{
+
+    width:270px;
+
+    background:#146c43;
+
+    color:white;
+
+    padding:30px 20px;
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    height:100%;
+
+    box-shadow:5px 0 20px rgba(0,0,0,.15);
+}
+
+.logo{
+
+    width:120px;
+
+    display:block;
+
+    margin:auto;
+
+    margin-bottom:20px;
+}
+
+.sidebar h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    font-size:28px;
+}
+
+.sidebar ul{
+
+    list-style:none;
+}
+
+.sidebar li{
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin-bottom:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.sidebar li:hover{
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateX(6px);
+}
+
+.sidebar .active{
+
+    background:white;
+
+    color:#146c43;
+
+    font-weight:bold;
+}
+
+/* ===== Основна частина ===== */
+
+.main{
+
+    margin-left:270px;
+
+    width:calc(100% - 270px);
+
+    padding:40px;
+}
+
+/* ===== Верхня панель ===== */
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+}
+
+#welcome{
+
+    color:#146c43;
+
+    font-size:36px;
+
+    margin-bottom:8px;
+}
+
+.welcome p{
+
+    color:#666;
+
+    font-size:18px;
+}
+
+.logout{
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    color:#146c43;
+
+    transition:.3s;
+}
+
+.logout:hover{
+
+    transform:scale(1.15);
+}
+
+/* ===== Картки ===== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-bottom:40px;
+}
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+}
+
+.card h2{
+
+    font-size:45px;
+
+    margin-bottom:10px;
+}
+
+.card h3{
+
+    color:#555;
+
+    margin-bottom:10px;
+}
+
+.card p{
+
+    font-size:34px;
+
+    color:#146c43;
+
+    font-weight:bold;
+}
+
+/* ===== Блок "Останні дії" ===== */
+
+.activity{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.activity h2{
+
+    color:#146c43;
+
+    margin-bottom:20px;
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#d9f3e3;
+
+    margin-top:-25px;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+}
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:rgba(255,255,255,.2);
+
+    margin:20px 0;
+}
+
+.sidebar li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.sidebar li i{
+
+    width:25px;
+
+    text-align:center;
+
+    font-size:18px;
+}
+
+.version{
+
+    position:absolute;
+
+    bottom:25px;
+
+    left:0;
+
+    width:100%;
+
+    text-align:center;
+
+    color:#cde9d7;
+
+    font-size:13px;
+}
+
+.profile{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+}
+
+.notification{
+
+width:45px;
+
+height:45px;
+
+border:none;
+
+border-radius:50%;
+
+background:white;
+
+cursor:pointer;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+font-size:18px;
+}
+
+.user{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+background:white;
+
+padding:8px 18px;
+
+border-radius:50px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.user img{
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+object-fit:cover;
+}
+
+.user h3{
+
+font-size:17px;
+
+color:#222;
+}
+
+.user p{
+
+font-size:13px;
+
+color:#777;
+}
+
+.logout{
+
+width:45px;
+
+height:45px;
+
+border:none;
+
+background:#146c43;
+
+color:white;
+
+border-radius:50%;
+
+cursor:pointer;
+
+font-size:18px;
+
+transition:.3s;
+}
+
+.logout:hover{
+
+transform:rotate(180deg);
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    width:100%;
+}
+
+.sidebar li{
+    list-style:none;
+}
+
+/* ---------- Новини ---------- */
+
+.newsSection{
+
+    margin-top:40px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.newsHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.newsHeader h2{
+
+    color:#166534;
+
+    font-size:30px;
+
+}
+
+.newsHeader a{
+
+    color:#166534;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+#dashboardNews{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.smallNews{
+
+    background:#f7f7f7;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+.smallNews:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.smallNews img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+}
+
+.smallNewsContent{
+
+    padding:18px;
+
+}
+
+.smallNewsDate{
+
+    color:#777;
+
+    font-size:13px;
+
+    margin-bottom:8px;
+
+}
+
+.smallNewsTitle{
+
+    font-size:20px;
+
+    color:#166534;
+
+    font-weight:700;
+
+}
+
+.smallNews{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.smallNews:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.smallNews img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+}
+
+.smallNewsContent{
+
+    padding:18px;
+
+}
+
+.smallNewsDate{
+
+    color:#777;
+
+    font-size:14px;
+
+    margin-bottom:10px;
+
+}
+
+.smallNewsTitle{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#166534;
+
+    margin-bottom:10px;
+
+}
+
+.smallNewsText{
+
+    color:#555;
+
+    line-height:1.6;
+
+    font-size:15px;
+
+}
+
+.smallNewsText{
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:3;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+}

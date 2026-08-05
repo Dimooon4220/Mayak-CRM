@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    padding:40px;
+}
+
+.container{
+    width:100%;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+header h1{
+    color:#176d3d;
+    font-size:58px;
+    font-weight:700;
+}
+
+.actions{
+    display:flex;
+    gap:15px;
+}
+
+.actions input{
+    width:320px;
+    padding:15px 20px;
+    border-radius:18px;
+    border:1px solid #ddd;
+    font-size:24px;
+    outline:none;
+}
+
+.actions button{
+    background:#176d3d;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:18px;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.actions button:hover{
+    background:#12552f;
+}
+
+table{
+    width:100%;
+    border-collapse:separate;
+    border-spacing:0 20px;
+}
+
+thead{
+    background:#176d3d;
+}
+
+thead th{
+    color:white;
+    padding:20px;
+    font-size:22px;
+}
+
+thead th:first-child{
+    border-radius:18px 0 0 18px;
+}
+
+thead th:last-child{
+    border-radius:0 18px 18px 0;
+}
+
+tbody tr{
+    background:white;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+tbody td{
+    text-align:center;
+    padding:18px;
+    font-size:20px;
+}
+
+tbody td:first-child{
+    border-radius:15px 0 0 15px;
+}
+
+tbody td:last-child{
+    border-radius:0 15px 15px 0;
+}
+
+.status-paid{
+    color:#1b8f42;
+    font-weight:700;
+}
+
+.status-unpaid{
+    color:#d62828;
+    font-weight:700;
+}
+
+.actionBtn{
+    background:#176d3d;
+    color:white;
+    border:none;
+    padding:10px 16px;
+    border-radius:10px;
+    cursor:pointer;
+    margin:0 3px;
+}
+
+.actionBtn:hover{
+    background:#12552f;
+}
+
+/* ---------- Модальне вікно ---------- */
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:white;
+    width:650px;
+    padding:30px;
+    border-radius:20px;
+}
+
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.modal-header h2{
+    color:#176d3d;
+}
+
+#closeModal{
+    font-size:32px;
+    cursor:pointer;
+}
+
+.form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.form input,
+.form select{
+    padding:14px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:18px;
+}
+
+.form button{
+    background:#176d3d;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.form button:hover{
+    background:#12552f;
+}

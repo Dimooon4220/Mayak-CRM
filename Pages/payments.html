@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Оплати | Mayak CRM</title>
+
+<link rel="stylesheet" href="../css/payment.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>💰 Оплати</h1>
+
+<div class="actions">
+
+<input
+type="text"
+id="searchPayment"
+placeholder="🔍 Пошук">
+
+<button id="addPayment">
+
+➕ Додати оплату
+
+</button>
+
+</div>
+
+</header>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Гравець</th>
+<th>Команда</th>
+<th>Місяць</th>
+<th>Сума</th>
+<th>Статус</th>
+<th>Дії</th>
+
+</tr>
+
+</thead>
+
+<tbody id="paymentsTable">
+
+</tbody>
+
+</table>
+
+<!-- Модальне вікно -->
+
+<div class="modal" id="paymentModal">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h2>💰 Додати оплату</h2>
+
+            <span id="closeModal">&times;</span>
+
+        </div>
+
+        <div class="form">
+
+            <input type="text" id="player" placeholder="Гравець">
+
+            <input type="text" id="team" placeholder="Команда">
+
+            <input type="text" id="month" placeholder="Місяць">
+
+            <input type="number" id="amount" placeholder="Сума">
+
+            <select id="status">
+
+                <option value="Сплачено">🟢 Сплачено</option>
+
+                <option value="Не сплачено">🔴 Не сплачено</option>
+
+            </select>
+
+            <button id="savePayment">
+
+                💾 Зберегти
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="../js/payment.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гравці | Mayak CRM</title>
+
+    <link rel="stylesheet" href="../css/cssplayers.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>👥 Гравці клубу</h1>
+
+        <div class="actions">
+
+            <input
+            type="text"
+            placeholder="🔍 Пошук гравця">
+
+            <button id="addPlayer">
+                ➕ Додати гравця
+            </button>
+
+        </div>
+
+    </header>
+
+    <table>
+
+    <thead>
+
+        <tr>
+
+            <th>Фото</th>
+            <th>ПІБ</th>
+            <th>Вік</th>
+            <th>Команда</th>
+            <th>Номер</th>
+            <th>Телефон</th>
+            <th>Позиція</th>
+            <th>Дії</th>
+
+        </tr>
+
+    </thead>
+
+<tbody id="playersTable">
+
+</tbody>
+
+
+    </table>
+
+</div>
+
+<script src="../js/jsplayers.js"></script>
+
+<!-- Модальне вікно -->
+
+<div class="modal" id="playerModal">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+            <h2>➕ Додати гравця</h2>
+            <span id="closeModal">&times;</span>
+        </div>
+
+        <div class="form">
+
+            <input type="text" id="firstName" placeholder="Ім'я">
+
+            <input type="text" id="lastName" placeholder="Прізвище">
+
+            <input type="date" id="birthDate">
+
+            <input type="text" id="team" placeholder="Команда">
+
+            <input type="text" id="number" placeholder="Ігровий номер">
+
+            <input type="text" id="phone" placeholder="Телефон">
+
+            <input type="text" id="parentPhone" placeholder="Телефон батьків">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <input type="text" id="position" placeholder="Позиція">
+
+            <input type="file" id="photo" accept="image/*">
+
+            <button id="savePlayer">
+
+                💾 Зберегти
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

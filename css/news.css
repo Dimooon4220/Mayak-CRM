@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f6fb;
+    padding:40px;
+}
+
+.container{
+    max-width:1500px;
+    margin:auto;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+header h1{
+    color:#166534;
+    font-size:48px;
+    font-weight:700;
+}
+
+#addNews{
+    background:#166534;
+    color:white;
+    border:none;
+    padding:14px 24px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+#addNews:hover{
+    background:#15803d;
+    transform:translateY(-2px);
+}
+
+#newsContainer{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(420px,1fr));
+    gap:30px;
+}
+
+.newsCard{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.newsCard:hover{
+    transform:translateY(-8px);
+}
+
+.newsCard img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.newsContent{
+    padding:25px;
+}
+
+.newsDate{
+    color:#888;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.newsTitle{
+    font-size:26px;
+    color:#166534;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.newsText{
+    color:#555;
+    line-height:1.6;
+}
+
+.newsButtons{
+    margin-top:20px;
+    display:flex;
+    gap:12px;
+}
+
+.newsButtons button{
+    border:none;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    color:white;
+    cursor:pointer;
+    font-size:17px;
+}
+
+.edit{
+    background:#f59e0b;
+}
+
+.delete{
+    background:#ef4444;
+}
+
+/* -------- Modal -------- */
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    justify-content:center;
+    align-items:center;
+    z-index:100;
+}
+
+.modal-content{
+    background:white;
+    width:600px;
+    border-radius:20px;
+    padding:30px;
+}
+
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.modal-header h2{
+    color:#166534;
+}
+
+#closeModal{
+    font-size:30px;
+    cursor:pointer;
+}
+
+.form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.form input,
+.form textarea{
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:15px;
+    font-size:16px;
+}
+
+.form textarea{
+    min-height:180px;
+    resize:none;
+}
+
+#saveNews{
+    background:#166534;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+#saveNews:hover{
+    background:#15803d;
+}

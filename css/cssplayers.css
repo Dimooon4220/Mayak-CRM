@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    padding:40px;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+header h1{
+    color:#146c43;
+    font-size:34px;
+}
+
+.actions{
+    display:flex;
+    gap:15px;
+}
+
+.actions input{
+    width:300px;
+    padding:12px 15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+.actions input:focus{
+    border-color:#146c43;
+}
+
+.actions button{
+    background:#146c43;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.actions button:hover{
+    background:#0f5735;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+thead{
+    background:#146c43;
+    color:white;
+}
+
+th,td{
+    padding:18px;
+    text-align:center;
+}
+
+tbody tr{
+    border-bottom:1px solid #eee;
+}
+
+tbody tr:hover{
+    background:#f8f8f8;
+}
+
+/* ---------- Modal ---------- */
+
+.modal{
+
+display:none;
+
+position:fixed;
+
+left:0;
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.5);
+
+justify-content:center;
+
+align-items:center;
+
+z-index:999;
+}
+
+.modal-content{
+
+background:white;
+
+width:500px;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+animation:show .3s;
+}
+
+@keyframes show{
+
+from{
+
+transform:scale(.8);
+
+opacity:0;
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+}
+
+}
+
+.modal-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:25px;
+}
+
+.modal-header span{
+
+font-size:35px;
+
+cursor:pointer;
+}
+
+.form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+}
+
+.form input{
+
+padding:13px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:15px;
+}
+
+.form button{
+
+padding:15px;
+
+background:#146c43;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
+
+font-size:16px;
+}
+
+.form button:hover{
+
+background:#0f5735;
+}
+
+.playerPhoto{
+
+    width:55px;
+    height:55px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #146c43;
+
+}
